@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>love frame</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+<link rel="stylesheet" href="css/style.css">
+<style>
+ /*CSS Reset*/
+ body{
+    font-family: "Sofia", sans-serif;
+    
+    color:black;
+    margin:0px;
+    padding:2px;
+    background:url('img1.jpg');
+    
+ }
+ .love{ position:absolute;
+    left:38px;
+    top:18px;
+    display:inline-block;
+    border:2px solid red;
+
+ }
+ .love img{
+    width:90px;
+   
+ }
+ .love div{
+    line-height:12px; 
+    font-size:10px;
+    text-align:center;
+ }
+ .hate{
+    display:block;
+    width:44%;
+    margin:20px auto; 
+    border:2px solid yellow;
+
+
+ }
+ .friendbenefits{
+    position:absolute;
+    right:34px;
+    top:18px;
+    display:inline-block;
+    border:2px solid greenyellow;
+
+ }
+ .navbar{
+    display:inline-block;
+ }
+ .navbar li{
+    
+    display:inline-block;
+    font-size:20px;
+ }
+ .navbar li a{
+    color: white;
+    text-decoration:none;
+    padding: 34px 23px;
+ }
+ .navbar li a:hover, .navbar li a.active{
+    
+    text-decoration:underline;
+    color:red;
+ }
+ .btn{
+    margin:0px 9px;
+    background-color: pink;
+    color:black;
+    padding:4px 4px;
+    border: 2px solid red;
+    border-radius: 2px;
+    font-size: 14x;
+    cursor: pointer;
+ }
+   .btn:hover{
+    background-color: grey;
+   } 
+   .container{
+    border: 2px solid #ff0000;
+    margin: 108px 8px;
+    padding: 17px 0px;
+    width:39%;
+    border-radius: 12px;
+    background-color:pink;
+   }
+   .form-group{
+    text-align:center;
+    display:block;
+    width:20px;
+    padding:5px;
+    border:2px solid black;
+    margin:3px auto;
+   }
+</style>
+<body>
+   <header class="header">
+    <!--Left box for logo-->
+    <div class="love">
+        <img src="img2.jpg" alt="">
+        <div style="line-height:12px; font-size:10px;">
+        <div>receptionparty
+        </div>   
+        </div>
+     
+     
+    </div>
+    <!--Mid box for navigation-->
+    <div class="hate">
+        <!--ul.navbar-->
+        <ul class="navbar">
+            <li><a href="#" class="active">boy</a></li>
+            <li><a href="#">girl</a></li>
+            <li><a href="#">boy age</a></li>
+            <li><a href="#">girl age</a></li>
+
+        </ul>
+     
+    </div>
+    <!--Right box for buttons-->
+    <div class="friendbenefits">
+     <button class="btn">call</button>
+     <button class="btn">message</button>
+    </div>
+
+   </header> 
+   <div class="container">
+    <h1>MARRIAGE REGISTRATION</h1>
+    <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="Mr.Dharmendrakumar" placeholder="Enter boy name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="Miss.Anjanakumari" placeholder="Enter girl name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="Mr.Shekharsharma" placeholder="Do you want to marry me">
+        </div>
+        <button class="btn">,MARRIAGE</button>
+    </form>
+   </div>
+</body>
+</html>
